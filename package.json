@@ -1,0 +1,27 @@
+{
+  "name": "rbsoft",
+  "version": "1.10.0",
+  "description": "Software for Revolution bangladesh",
+  "main": "app/main.js",
+  "dependencies": {
+    "browser-window": "^0.4.0",
+    "cors": "^2.8.4",
+    "electron-builder-squirrel-windows": "^20.28.3",
+    "electron-progressbar": "^1.1.0",
+    "electron-reload": "^1.2.5",
+    "electron-simple-updater": "^1.2.4"
+  },
+  "devDependencies": {
+    "electron": "^2.0.9",
+    "electron-builder": "^20.28.4"
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app/main.js",
+    "dist": "build",
+    "publish": "publish",
+    "release": "npm run dist && npm run publish"
+  },
+  "author": "stupid@coder",
+  "license": "ISC"
+}
